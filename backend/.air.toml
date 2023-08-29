@@ -1,0 +1,15 @@
+root = "."
+tmp_dir = "tmp"
+build_args = ["-i"]
+colors = true
+
+[build]
+  delay = 10
+
+[[watcher]]
+  path = "./"
+  exclude_regexp = '^tmp/|^vendor/'
+
+[[watcher]]
+  path = "./config/"
+  include_ext = ["toml"]
